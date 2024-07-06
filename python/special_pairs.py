@@ -15,7 +15,7 @@ def special_pairs(n):
     primes = set()
     res = []
     
-    for i in range(1, n-1, 1):
+    for i in range(1, n-1):
         if is_prime(i):
             primes.add(i)
     

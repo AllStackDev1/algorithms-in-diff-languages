@@ -40,16 +40,12 @@ func Get(n int32) [][]int32 {
 	}
 
 	res := [][]int32{}
-	seen := make(map[int32]struct{}) // To avoid adding duplicate pairs
 
 	// Find special pairs
 	for _, p := range primes {
 		compliment := n - p
 		if _, exists := primeSet[compliment]; exists && p < compliment {
-			if _, pairSeen := seen[p]; !pairSeen {
-				res = append(res, []int32{p, compliment})
-				seen[compliment] = struct{}{} // Mark the compliment as seen
-			}
+			res = append(res, []int32{p, compliment})
 		}
 	}
 
