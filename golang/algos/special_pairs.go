@@ -1,4 +1,4 @@
-package special_pairs
+package algos
 
 import (
 	"math"
@@ -27,7 +27,7 @@ func isPrime(n int32) bool {
 }
 
 // Get finds all unique pairs of prime numbers that sum up to n.
-func Get(n int32) [][]int32 {
+func SpecialPairs(n int32) [][]int32 {
 	primes := []int32{}
 	primeSet := make(map[int32]struct{}) // To quickly check for the presence of a prime
 

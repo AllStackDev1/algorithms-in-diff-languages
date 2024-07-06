@@ -12,12 +12,12 @@ def is_prime(num):
     return True
     
 def special_pairs(n):
-    primes = set()
+    primes = set(i for i in range(1, n-1) if is_prime(i))
     res = []
     
-    for i in range(1, n-1):
-        if is_prime(i):
-            primes.add(i)
+    # for i in range(1, n-1):
+    #     if is_prime(i):
+    #         primes.add(i)
     
     # Find special pairs
     for p in primes:
@@ -26,5 +26,3 @@ def special_pairs(n):
             res.append([p, complement])
     
     return res
-
-print("Special Pairs - PY %s" % special_pairs(18))
