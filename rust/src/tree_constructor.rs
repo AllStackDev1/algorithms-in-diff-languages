@@ -5,6 +5,7 @@ pub fn get(str_arr: Vec<&str>) -> bool {
     let mut children: HashMap<String, String> = HashMap::new();
 
     for &pair in &str_arr {
+        // let cleaned_pair = pair.trim_matches(|c| c == '(' || c == ')');
         let cleaned_pair = pair.replace(['(', ')'], "");
         let nodes: Vec<_> = cleaned_pair.split(',').collect();
         let child = nodes[0].to_owned();
