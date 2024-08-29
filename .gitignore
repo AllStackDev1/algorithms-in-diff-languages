@@ -1,6 +1,7 @@
-
 rust/target
 rust/Cargo.lock
 
 typescript/node_modules
 typescript/package-lock.json
+
+.DS_Store
