@@ -1,4 +1,4 @@
-# Algorithms In Diff Languages
+# Algorithms In Different Languages
 
 ### Go Lang
 
@@ -9,7 +9,7 @@
 ### Python
 
 ```bash
-  python3 file_path/file_name.py
+  python3 tests.py
 ```
 
 ### Rust
@@ -21,5 +21,5 @@
 ### TypeScript
 
 ```bash
-  npm start
+  npm test
 ```
